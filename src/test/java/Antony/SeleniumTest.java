@@ -10,14 +10,11 @@ public class SeleniumTest extends Util {
     public void init() throws Exception {
 
                    HomePage homepage = PageFactory.initElements(driver, HomePage.class);
-
                    basepage ba = PageFactory.initElements(driver, basepage.class);
-
                    WebElement s = homepage.sendlocator();
                    String vv=ba.username();
                    System.out.println(vv);
-                   ba.sendkeys(s,vv);
-                
+                   ba.sendkeys(s,vv);              
 
                    Thread.sleep(10000);
 
