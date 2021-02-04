@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="10539" started-at="2021-02-04T10:40:08Z" finished-at="2021-02-04T10:40:18Z">
+  <suite name="Suite1" duration-ms="13220" started-at="2021-02-04T11:41:21Z" finished-at="2021-02-04T11:41:34Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="10539" started-at="2021-02-04T10:40:08Z" finished-at="2021-02-04T10:40:18Z">
+    <test name="test1" duration-ms="13220" started-at="2021-02-04T11:41:21Z" finished-at="2021-02-04T11:41:34Z">
       <class name="Antony.SeleniumTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="initialize" is-config="true" duration-ms="6912" started-at="2021-02-04T16:10:01Z" finished-at="2021-02-04T16:10:08Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="initialize" is-config="true" duration-ms="9883" started-at="2021-02-04T17:11:11Z" finished-at="2021-02-04T17:11:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="init()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="init" duration-ms="10528" started-at="2021-02-04T16:10:08Z" finished-at="2021-02-04T16:10:18Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="init" duration-ms="13207" started-at="2021-02-04T17:11:21Z" finished-at="2021-02-04T17:11:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="TeardownTest" is-config="true" duration-ms="750" started-at="2021-02-04T16:10:18Z" finished-at="2021-02-04T16:10:19Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="TeardownTest" is-config="true" duration-ms="1004" started-at="2021-02-04T17:11:34Z" finished-at="2021-02-04T17:11:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->

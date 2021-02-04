@@ -4,6 +4,7 @@ import java.io.IOException; // TestBase.java
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -16,7 +17,10 @@ public class Util {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwiuiZHHmevtAhUuzzgGHWIiDHwQPAgI");
+		
+		 basepage ba = PageFactory.initElements(driver, basepage.class);
+		String URL=ba.url();
+		driver.get(URL);
 	}
 
 	@AfterSuite

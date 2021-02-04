@@ -47,6 +47,37 @@ public class basepage {
 	 
 		  
 	 }
+    
+    
+    String url()
+    {
+    	
+		  File src=new File("D:\\antony.j\\eclipse-workspace\\Seleniumbasicpgm\\src\\test\\resources\\Excel.xlsx");
+		 
+		   FileInputStream fis = null;
+		try {
+			fis = new FileInputStream(src);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	 
+		 
+		   XSSFWorkbook wb = null;
+		try {
+			wb = new XSSFWorkbook(fis);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}   
+		 
+		      XSSFSheet sh1= wb.getSheetAt(0);
+		      String url=sh1.getRow(1).getCell(2).getStringCellValue();
+		 return url;
+	 
+		  
+	 }
+    
+    
 
 
 

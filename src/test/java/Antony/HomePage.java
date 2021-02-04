@@ -8,13 +8,10 @@ public class HomePage {
 	  WebDriver driver;
 
       public HomePage(WebDriver driver) {
-
                      this.driver = driver;
-
       }
 
-      @FindBy(xpath = "//input[@name='q']") private WebElement userName;
-
+      @FindBy(name = "username") private WebElement userName;
       public WebElement sendlocator() {
 
                      return userName;
