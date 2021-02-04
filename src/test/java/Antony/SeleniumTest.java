@@ -14,8 +14,10 @@ public class SeleniumTest extends Util {
                    basepage ba = PageFactory.initElements(driver, basepage.class);
 
                    WebElement s = homepage.sendlocator();
-
-                   ba.sendkeys(s);
+                   String vv=ba.username();
+                   System.out.println(vv);
+                   ba.sendkeys(s,vv);
+                
 
                    Thread.sleep(10000);
 
