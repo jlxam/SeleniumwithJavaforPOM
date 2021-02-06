@@ -22,6 +22,13 @@ public class Util {
 		String URL=ba.url();
 		driver.get(URL);
 	}
+	public static WebDriver getDriver()
+	
+	{
+		return driver;
+		
+	}
+	
 
 	@AfterSuite
 	public void TeardownTest() {

@@ -12,8 +12,31 @@ public class HomePage {
       }
 
       @FindBy(name = "username") private WebElement userName;
-      public WebElement sendlocator() {
+      public WebElement sendlocator() 
+      {
+    	  return userName;
+      }
 
-                     return userName;
+      @FindBy(name = "signin") private WebElement Next;
+      public WebElement Next() 
+      {
+    	  return Next;
+      }                
 
-}}
+      @FindBy(name = "password") private WebElement Password;
+      public WebElement Password() 
+      {
+    	  return Password;
+      }  
+      
+      @FindBy(name = "verifyPassword") private WebElement verifyPassword;
+      public WebElement verifyPassword() 
+      {
+    	  return verifyPassword;
+      }  
+
+      
+      
+
+
+}

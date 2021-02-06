@@ -1,21 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="13220" started-at="2021-02-04T11:41:21Z" finished-at="2021-02-04T11:41:34Z">
+  <suite name="Suite1" duration-ms="13121" started-at="2021-02-06T15:15:28Z" finished-at="2021-02-06T15:15:41Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="13220" started-at="2021-02-04T11:41:21Z" finished-at="2021-02-04T11:41:34Z">
+    <test name="test1" duration-ms="13121" started-at="2021-02-06T15:15:28Z" finished-at="2021-02-06T15:15:41Z">
       <class name="Antony.SeleniumTest">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="initialize" is-config="true" duration-ms="9883" started-at="2021-02-04T17:11:11Z" finished-at="2021-02-04T17:11:21Z">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Antony.SeleniumTest@11dc3715]" name="initialize" is-config="true" duration-ms="9708" started-at="2021-02-06T20:45:18Z" finished-at="2021-02-06T20:45:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="init()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="init" duration-ms="13207" started-at="2021-02-04T17:11:21Z" finished-at="2021-02-04T17:11:34Z">
+        <test-method status="FAIL" signature="init()[pri:0, instance:Antony.SeleniumTest@11dc3715]" name="init" duration-ms="12247" started-at="2021-02-06T20:45:28Z" finished-at="2021-02-06T20:45:40Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://in.yahoo.com/?p=us1] but found [https://in.yahoo.com/?p=us]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://in.yahoo.com/?p=us1] but found [https://in.yahoo.com/?p=us]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at Antony.SeleniumTest.init(SeleniumTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:Antony.SeleniumTest@18be83e4]" name="TeardownTest" is-config="true" duration-ms="1004" started-at="2021-02-04T17:11:34Z" finished-at="2021-02-04T17:11:35Z">
+        <test-method status="PASS" signature="TeardownTest()[pri:0, instance:Antony.SeleniumTest@11dc3715]" name="TeardownTest" is-config="true" duration-ms="1106" started-at="2021-02-06T20:45:41Z" finished-at="2021-02-06T20:45:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeardownTest -->
